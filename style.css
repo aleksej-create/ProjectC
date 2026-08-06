@@ -1,0 +1,110 @@
+body {
+    background: #E6E6E6;
+    background-image: url('images/fon.jpg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no repeat;
+}
+.content{
+    margin-top: 10px;
+}
+.png{
+    width: 200px;
+    height: 200px;
+    left: 20px;
+}
+p,li,h2,h3 {
+    margin: 10px;
+    color: #ffffff;
+}   
+.card {
+  position: relative;
+  box-sizing: border-box;
+  background: #000000;
+  border-radius: 16px;
+  padding: 20px 25px;
+  box-shadow: 0px 4px 15px rgba(255,255,255,0.5);
+  margin-bottom: 20px;
+  border: 2px solid #ffffff;
+  background-image:    
+  linear-gradient(#D6D6D6 1px, transparent 1px);
+  background-size: 100% 30px;
+  color: #ffffff;
+}
+.card-correct{
+    position: relative;
+    box-sizing: border-box;
+    background: #000000;
+    border: 2px solid #ffffff;
+    border-radius: 16px;
+    padding: 20px 25px;
+    box-shadow: 0px 4px 15px rgba(255,255,255,0.5);
+    margin-bottom: 20px;
+    background-image:
+    linear-gradient(#D6D6D6 1px, transparent 1px);
+    background-size: 100% 24px;
+    color: #ffffff;
+}
+.card1 {
+    box-sizing: border-box;
+    background: #2b6dff;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow:0 4px 15px;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+.color-s {
+    color: #ffffff;
+}
+.container {
+  position: relative;
+  transition: opacity 0.4s ease, max-height 0.4s ease;
+  font-family: Arial, sans-serif;
+  color: #ffffff;
+}
+.btn {
+  padding: 10px 20px;
+  background: #ffffff;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: block;
+  margin-bottom: 0;
+  transition: margin-bottom 0.4s ease;
+  font-size: 16px;
+  box-shadow: 0 4px 8px;
+  margin: 20px;
+}
+.slide-text {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.4s ease;
+  opacity: 0;
+  padding: 0;
+  color: #333;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #ffffff;
+}
+.container.open .slide-text {
+  max-height: 500px;
+  opacity: 1;
+  padding: 10px 0;
+  overflow: visible;
+}
+.container.open .btn {
+  margin-bottom: 10px;
+}
+.main-content {
+  transition: margin-top 0.4s ease;
+  margin-top: 0;
+  color: #333;
+  font-size: 16px;
+  line-height: 1.6;
+}
+.container.open .main-content {
+  margin-top: 20px;
+  overflow: visible;
+}

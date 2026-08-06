@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="project C wikipedia">
+    <title>Project_C_Wikipedia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="content">
+    <section class="card">
+        <h2>Википедия проекта симуляции 1.2 уже здесь!</h2>
+        <h3>что нового:</h3>
+        <ul>
+            <li>дизайн сайта</li>
+            <li>больше информации</li>
+            <li>более чистый скрипт</li>
+            <li>больше интеграций</li>
+            <li>добавлена галерея рисунков</li>
+            <li>добавлена тёмная тема</li>
+        </ul>
+        </div>
+    </section>
+    
+    <section class="card">
+        <h2>Главы</h2>
+        <ul>
+            <li>1-24 серии бессюжетной эры</li>
+            <li>25-29 серии сюжетной эры</li>
+            <li>30-32 серии. ФИНАЛ</li>
+            <li>Персонажи</li>
+            <li>Мемы</li>
+            <li>Дополнительные серии</li>
+            <li>несбывшиеся идеи</li>
+            <li>Игры про вселённую проекта</li>
+            <li>Авторы проекта и прочее.. </li>
+            <li>галерея фан-рисунков</li>
+            
+        </ul>
+    </section>
+   <div class="card-correct">
+    <div class="container" id="wrapper1">
+  <button class="btn" onclick="toggleSlide('wrapper1')">1-24 серии бессюжетной эры</button>
+  <div class="slide-text">1-24 серии ничего особого не происходит. Элфи отвечает на вопросы и разговаривает на разные темы создавая предметы.</div>
+  <div class="main-content"></div>
+</div>
+
+<div class="container" id="wrapper2">
+  <button class="btn" onclick="toggleSlide('wrapper2')">25-29 серии Сюжетной эры. </button>
+  <div class="slide-text">в 25-29 сериях происходят важнейшие для мультфильма ситуации. После потери сознания элфи встречает кряка. По его словам создателя этого места</div>
+  <div class="main-content"></div>
+</div>
+
+<div class="container" id="wrapper3">
+  <button class="btn" onclick="toggleSlide('wrapper3')">30-32 серии. Финал</button>
+  <div class="slide-text">в 30 и 32 серии элфи понимает что так он долго не продержится и потихоньку принимает свою судьбу человека с терминальной стадии рака. в процессе он почти теряет способность говорить В итоге элфи просит кряка закончить эти мучения и сезон заканчивается вместе с элфи</div>
+  <div class="main-content"></div>
+  </div>
+  
+  <div class="container" id="wrapper4">
+  <button class="btn" onclick="toggleSlide('wrapper4')">персонажи</button>
+  <div class="slide-text">
+      <h2>Элфи.</h2>
+      <p>главный протагонист всех серий и по совместительству главный любитель сырных шариков</p>
+      <h2>Кряк.</h2>
+      <p>антагонист в сериях 25-32.</p>
+      <h2>Доктор</h2>
+      <p>про него почти ничего не известно. Погрузил Элфи в симуляцию.</p>
+  </div>
+  <div class="main-content"></div>
+  </div>
+
+<div class="container" id="wrapper5">
+  <button class="btn" onclick="toggleSlide('wrapper5')">мемы</button>
+  <div class="slide-text">
+      <h2>в Фандоме проекта стимуляции было создано достаточно много мемов:</h2>
+  <ul>
+      <li>сырные шарики (Элфи очень любит их и часто упоминает за что они и стали мемом)</li>
+      <li>Проект Меллстройности (фан-проект где Элфи кряк и доктор заменены фразами меллстроя при этом сохраняя смысл)</li>
+      <li>постоянные коментарии про (Еву) Элфи.</li>
+  </ul></div>
+  <div class="main-content"></div>
+  </div>
+
+<div class="container" id="wrapper6">
+  <button class="btn" onclick="toggleSlide('wrapper6')">дополнительные серии</button>
+  <div class="slide-text">
+     <h2>за весь 1 сезон было добавлено всего 5 спешлов где Элфи успел:</h2>
+     <ul>
+         <li>испугаться на хеллоуин</li>
+         <li>встретил новый год</li>
+         <li>был зарикролен</li>
+         <li>побыл дураком в день дурака</li>
+         <li>создал свое королевство</li>
+     </ul>
+  </div>
+  <div class="main-content"></div>
+  </div>
+
+<div class="container" id="wrapper7">
+  <button class="btn" onclick="toggleSlide('wrapper7')">несбывшиеся идеи</button>
+  <div class="slide-text"> 
+      <p>в первых сериях проекта были субтитры которые позже бесследно пропали по неизвестной причине.</p>
+      <p>разбор полётов. Рубрика созданная для поддержания канала от которой позже отказались по неизвестной причине</p>
+  </div>
+  <div class="main-content"></div>
+  </div>
+
+<div class="container" id="wrapper8">
+  <button class="btn" onclick="toggleSlide('wrapper8')">игры про вселённую проекта</button>
+  <div class="slide-text">
+      <h2>за всю историю проекта была создана 1 фанатская игра позже так и не вышедшая в сеть. Говорить особо нечего. </h2>
+  </div>
+  <div class="main-content"></div>
+  </div>
+ </div>
+<script>
+function toggleSlide(id) {
+  const container = document.getElementById(id);
+  container.classList.toggle('open');
+}
+</script>
+
+<section>
+    <div class="card">
+    <h2>Галерея:</h2>
+    </div>
+    <div class="card-correct">
+       <p><img src="images/png1.jpg" alt="fan" class="png"></p>
+       <p><img src="images/2png.jpg" alt="fan" class="png"></p>
+       <p><img src="images/3png.jpg" alt="fan" class="png"></p>
+       <p><img src="images/4png.jpg" alt="fan" class="png"></p>
+       <p>вооссоздана лишь часть всех рисунков поскольку автор сайта ленивая жопа.</p>
+    </div>
+</section>
+
+<section class="card1">
+    <h2>Авторы Проекта и прочие люди:</h2>
+    <ul>
+        <li><a href="https://www.tiktok.com/@cerecglzxly?_r=1&_t=ZS-98OtyItsGyv" class="color-s">Project C</a></li>
+        <li><a href="https://www.tiktok.com/@cheesy_899?_r=1&_t=ZS-98OtzLIrOXB" class="color-s">Эчкоридзе</a></li>
+        <li><a href="https://www.tiktok.com/@charas666?_r=1&_t=ZS-98Otyl5138i" class="color-s">ℭ𝔥𝔞𝔯𝔞</a></li>
+        <li><a href="https://www.tiktok.com/@anima__61?_r=1&_t=ZS-98P5oBdiMT3" class="color-s">animation</a></li>
+    </ul>
+    </div>
+</section>
+</body>
+</html>
